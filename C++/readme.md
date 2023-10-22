@@ -1,15 +1,12 @@
 # Reverse Words in a String
 Reverse Words in a String
-Solved
-Medium
-Topics :-
-Companies
-Leetcode
+Solved 
+Medium Level
+Topics :- Companies , Leetcode
 
-Hint
-When reversing words in a string, you can iterate through the string in reverse order. 
-Use a buffer to build each word in reverse and then append it to the result string. 
-Don't forget to handle spaces and trim the trailing space at the end.
+Hint: - When reversing words in a string, you can iterate through the string in reverse order. 
+        Use a buffer to build each word in reverse and then append it to the result string. 
+        Don't forget to handle spaces and trim the trailing space at the end.
 
  
 
@@ -46,7 +43,6 @@ The time complexity of the provided code is O(n), where "n" is the length of the
 Here's why:
 
 The code iterates through the entire input string once, which is an O(n) operation.
-
 The code processes each character in the input string only once, performing constant-time operations for each character. 
 After the loop, there is another constant-time operation to remove the trailing space.
 Therefore, the overall time complexity is O(n), where "n" is the length of the input string.
