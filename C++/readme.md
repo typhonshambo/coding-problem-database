@@ -20,13 +20,11 @@ Input: s = "the sky is blue"
 Output: "blue is sky the"
 
 Example 2:
-```
 Input: s = "  hello world  "
 Output: "world hello"
 Explanation: Your reversed string should not contain leading or trailing spaces.
 
 Example 3:
-```
 Input: s = "a good   example"
 Output: "example good a"
 Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string.
@@ -49,9 +47,7 @@ Here's why:
 
 The code iterates through the entire input string once, which is an O(n) operation.
 
-During this iteration, it processes each character exactly once. The operations performed for each character include appending it to the "word" buffer (constant time), checking for spaces and appending words to the "ans" buffer (constant time), and clearing the "word" buffer when a word is completed (constant time).
-
-After the loop, there's a final step to remove the trailing space from the "ans" buffer, which is also a constant-time operation.
-
-Since all the operations within the loop are constant time, and the loop iterates through each character exactly once, the overall time complexity is O(n)
+The code processes each character in the input string only once, performing constant-time operations for each character. 
+After the loop, there is another constant-time operation to remove the trailing space.
+Therefore, the overall time complexity is O(n), where "n" is the length of the input string.
 ```
